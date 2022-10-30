@@ -29,7 +29,7 @@ console.log(otp);
 app.post('/send',function(req,res){
     email=req.body.email;
           
-     var count=10;
+     var count=30;
      setInterval(function(){
       count--;
       if(count>=0){
