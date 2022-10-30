@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>verify-OTP</title>
+
+  <link rel="stylesheet" href="../public/css/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="brand"><span>Verify </span> OTP</h1>
+    <div class="wrapper animated bounceInLeft">
+      <div class="company-info">
+        <h3>Jaxl Innovation</h3>
+        
+      </div>
+      <div class="contact">
+        {{msg}}
+        <h5>otp expire in {{timer}}s</h5>
+        <form method="POST" action="verify">
+          <p>
+            <label>Enter otp</label>
+            <input type="text" name="otp" required>
+          </p>
+          
+          <p class="full">
+            <button type="submit">verify-OTP</button>
+          </p>
+
+        </form>
+        <br>
+        <form method="POST" action="resend">
+          <p class="full">
+            <button type="submit">Request Another otp</button>
+          </p>
+          
+      </div>
+    </div>
+  </div>
+</body>
+</html>
